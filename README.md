@@ -66,9 +66,9 @@ O projeto ainda está **em desenvolvimento**, com planos de adicionar:
 ```
 jogo-da-forca/
 │
-├── forca.py # Arquivo principal do jogo
-├── README.md # Documentação do projeto
-└── LICENSE # Licença MIT
+├── forca.py      # Arquivo principal do jogo
+├── README.md     # Documentação do projeto
+└── LICENSE       # Licença MIT
 ```
 
 ---
@@ -102,7 +102,8 @@ python forca.py
 | 🔤 **Tratamento de acentos** | Letras sem acento reconhecem letras acentuadas |
 | 🪢 **Boneco da forca** | Desenho exibido no terminal |
 
-👤 Autor
+## 👥 **Autor**
+
 <div align="center">
 
 **Desenvolvido com dedicação e café ☕ por:**
