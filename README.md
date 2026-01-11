@@ -63,6 +63,7 @@ O projeto ainda está **em desenvolvimento**, com planos de adicionar:
 
 ## 📁 Estrutura do Projeto
 jogo-da-forca/
+
 │
 
 ├── forca.py # Arquivo principal do jogo
