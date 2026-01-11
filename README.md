@@ -13,7 +13,7 @@
 ---
 
 *Um jogo clássico da forca desenvolvido totalmente em Python, focado em lógica, manipulação de strings e execução no terminal.  
-Escolha um tema, tente adivinhar a palavra e evite completar o boneco!* 💀
+Escolha um tema, tente adivinhar a palavra e evite eliminar o boneco!* 💀
 
 [🎯 **Sobre**](#-sobre-o-projeto) •  
 [⚙️ **Tecnologias**](#-tecnologias-utilizadas) •  
