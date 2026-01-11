@@ -82,9 +82,9 @@ jogo-da-forca/
 ### 1️⃣ Clone o repositório
 ```bash
 git clone https://github.com/jeanmbr/jogodaforca.git
+```
 
-
-### 1️⃣ Clone o repositório
+### 2️⃣ Acesse a pasta do projeto
 cd jogodaforca
 
 ### 3️⃣ Execute o jogo
@@ -106,4 +106,4 @@ Desenvolvido com dedicação e café ☕ por:
 
 👨‍💻 @jeanmbr
 
-</div> ```
+</div>
