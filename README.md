@@ -64,8 +64,11 @@ O projeto ainda está **em desenvolvimento**, com planos de adicionar:
 ## 📁 Estrutura do Projeto
 jogo-da-forca/
 │
+
 ├── forca.py # Arquivo principal do jogo
+
 ├── README.md # Documentação do projeto
+
 └── LICENSE # Licença MIT
 
 ---
@@ -73,15 +76,15 @@ jogo-da-forca/
 ## 🚀 Como Executar
 
 ### Pré-requisitos
-- Python **3.x** instalado
+- Python **3.14** instalado
 
 ### 1️⃣ Clone o repositório
 ```bash
-git clone https://github.com/jeanmbr/jogo-da-forca.git
+git clone https://github.com/jeanmbr/jogodaforca.git
 
 
 ### 1️⃣ Clone o repositório
-cd jogo-da-forca
+cd jogodaforca
 
 ### 3️⃣ Execute o jogo
 python forca.py
