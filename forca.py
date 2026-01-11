@@ -46,8 +46,8 @@ def menu():
     print()
     escolher_tema(resp)
 
-def escolher_tema(escolha):
-    if escolha == "1":
+def escolher_tema(resp):
+    if resp == "1":
         criar_boneco()
         pais = random.randint(1, len(paises))
         for letra in paises[pais]:
@@ -55,9 +55,26 @@ def escolher_tema(escolha):
                 print("  ", end="")
             else:
                 print("_ ", end="")
-    elif escolha == "2":
+    elif resp == "2":
+        criar_boneco()
         animal = random.randint(1, len(animais))
-    
+        for letra in animais[animal]:
+            if letra == " " or letra == "-":
+                print("  ", end="")
+            else:
+                print("_ ", end="")
+
+def verificar_letra(letra):
+    mapa = {
+        "a": "a", "á": "a", "à": "a", "â": "a", "ã": "a",
+        "e": "e", "é": "e", "ê": "e",
+        "i": "i", "í": "i",
+        "o": "o", "ó": "o", "ô": "o", "õ": "o",
+        "u": "u", "ú": "u",
+        "c": "c", "ç": "c"
+    }
+
+    return mapa.get(letra.lower(), letra.lower())    
 
 paises = [
     "Afeganistão", "África do Sul", "Albânia", "Alemanha", "Andorra",
@@ -171,5 +188,12 @@ animais = [
     "tatu", "teiu", "texugo", "tigre", "tilápia", "touro", "tritão", "tubarão", 
     "tucano", "urso", "urubu", "vaca", "zebra"
 ]
-  
-menu()
+
+resp = ""
+while resp != "2":
+    menu()
+    print("Deseja jogar novamente?")
+    resp = input()
+    while resp.lower() != "sim" and resp.lower() != "não" and resp.lower() != "nao":
+        print("Insira uma opção válida!")
+        resp = input()
