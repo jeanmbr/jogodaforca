@@ -62,15 +62,14 @@ O projeto ainda está **em desenvolvimento**, com planos de adicionar:
 ---
 
 ## 📁 Estrutura do Projeto
+
+```
 jogo-da-forca/
-
 │
-
 ├── forca.py # Arquivo principal do jogo
-
 ├── README.md # Documentação do projeto
-
 └── LICENSE # Licença MIT
+```
 
 ---
 
@@ -85,25 +84,29 @@ git clone https://github.com/jeanmbr/jogodaforca.git
 ```
 
 ### 2️⃣ Acesse a pasta do projeto
+```bash
 cd jogodaforca
+```
 
 ### 3️⃣ Execute o jogo
+```bash
 python forca.py
+```
 
-📚 Funcionalidades
-Funcionalidade	            Descrição
-🎮 Menu interativo	        Escolha o tema da palavra
-🌍 Tema Países	            Palavras com nomes de países
-🐾 Tema Animais	            Palavras com nomes de animais
-🔤 Tratamento de acentos	Letras sem acento reconhecem letras acentuadas
-🪢 Boneco da forca	        Desenho exibido no terminal
-🔁 Rejogar	                Possibilidade de jogar novamente
+## 📚 **Funcionalidades**
+| Funcionalidade | Descrição |
+|---------|------------|
+| 🎮 **Menu interativo** | Escolha o tema da palavra |
+| 🌍 **Tema Países** | Palavras com nomes de países |
+|🐾 **Tema Animais** | Palavras com nomes de animais |
+| 🔤 **Tratamento de acentos** | Letras sem acento reconhecem letras acentuadas |
+| 🪢 **Boneco da forca** | Desenho exibido no terminal |
 
 👤 Autor
 <div align="center">
 
-Desenvolvido com dedicação e café ☕ por:
+**Desenvolvido com dedicação e café ☕ por:**
 
-👨‍💻 @jeanmbr
+- 👨‍💻 @jeanmbr
 
 </div>
