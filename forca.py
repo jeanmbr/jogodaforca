@@ -47,22 +47,55 @@ def menu():
     escolher_tema(resp)
 
 def escolher_tema(resp):
+    criar_boneco()
+
     if resp == "1":
-        criar_boneco()
-        pais = random.randint(1, len(paises))
-        for letra in paises[pais]:
-            if letra == " " or letra == "-":
-                print("  ", end="")
-            else:
-                print("_ ", end="")
+        lista = paises
     elif resp == "2":
-        criar_boneco()
-        animal = random.randint(1, len(animais))
-        for letra in animais[animal]:
-            if letra == " " or letra == "-":
-                print("  ", end="")
-            else:
-                print("_ ", end="")
+        lista = animais
+    else:
+        return
+
+    indice = random.randint(0, len(lista) - 1)
+    palavra_sorteada = lista[indice]
+
+    palavra_oculta = []
+    for letra in palavra_sorteada:
+        if letra == " " or letra == "-":
+            palavra_oculta.append(letra)
+        else:
+            palavra_oculta.append("_")
+
+    print(" ".join(palavra_oculta))
+
+    while True:
+        letra_digitada = input("Digite uma letra: ").lower()
+
+        while letra_digitada == "" or letra_digitada.isdigit():
+            print("Insira uma letra válida!")
+            letra_digitada = input("Digite uma letra: ").lower()
+
+        letra_digitada = verificar_letra(letra_digitada)
+        acertou = False
+
+        for i in range(len(palavra_sorteada)):
+            if verificar_letra(palavra_sorteada[i]) == letra_digitada:
+                palavra_oculta[i] = palavra_sorteada[i]
+                acertou = True
+
+        if acertou:
+            print("Letra correta!")
+        else:
+            print("Letra incorreta!")
+
+        print(" ".join(palavra_oculta))
+
+        if "_" not in palavra_oculta:
+            print("-" * 35)
+            print()
+            print("PARABÉNS! Você acertou a palavra sorteada!")
+            print()
+            break
 
 def verificar_letra(letra):
     mapa = {
@@ -190,10 +223,20 @@ animais = [
 ]
 
 resp = ""
-while resp != "2":
+while resp != "não" and resp != "nao":
+    print()
     menu()
+    print("-" * 35)
     print("Deseja jogar novamente?")
+    print("-" * 35)
     resp = input()
     while resp.lower() != "sim" and resp.lower() != "não" and resp.lower() != "nao":
+        print("-" * 35)
         print("Insira uma opção válida!")
+        print("-" * 35)
         resp = input()
+    if resp.lower() == "não" or resp.lower() == "nao":
+        print()
+        print("-" * 35)
+        print()
+        print("Obrigado por jogar! Até a próxima.")
